@@ -76,5 +76,19 @@ Software upgrade page
 
 ![Alt text](source/upgrade_page.JPG)
 
-Home Assitant 
+## Home Assitant 
+HAS main page
 
+![Alt text](source/hasmain.JPG)
+
+HAS settings
+![Alt text](source/HASsettings.JPG)
+
+HAS System status 
+![Alt text](source/sysstatus.JPG)
+
+HAS heating mode 
+![Alt text](source/hasmode.JPG)
+
+HAS heating maintenance mode 
+![Alt text](source/maintenance.JPG)
