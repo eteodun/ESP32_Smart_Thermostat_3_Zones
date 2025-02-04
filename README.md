@@ -15,9 +15,17 @@ Customizability: Adjust heating schedules, temperature setpoints, and other para
 
 Protection to over running boiler: The system has implemented conditions to prevent boiler over running  in case that one or more sensor fail to measure, in case that  wifi or Home Asssitant is disconnected or malfunction on heating instalation that can increase time to reach or not reach target temperature.
 
+Upgrade firmware via webpage with binary file
+
+Easy to connect to WiFi or reconfigure WiFi. The module become AP and scan WiFi networks available. With your phone have to connect  at ESP AP module and  can select WiFi network , enter password and after this will became client.
+
 ## Technologies Involved:
 
 ESP Microcontroller (ESP8266/ESP32): The core component that runs the control logic and manages communications.
+
+Arduion OTA 
+
+Arduino mDNS
 
 Home Assistant: The home automation platform that integrates all components of the heating system.
 
@@ -27,18 +35,32 @@ Zigbee: The wireless communication standard used to control the TRV valves.
 
 ## How It Works:
 
-Upon startup, the ESP module connects to the Wi-Fi network and establishes an MQTT connection with Home Assistant. The module then listens for parameters from Home Assistant to adjust temperature setpoints and schedules for each heating zone. When a command is received, it transmits the necessary instructions over Zigbee to control the corresponding TRV valve. This setup allows Home Assistant to continuously monitor system performance and make real-time adjustments, ensuring optimal comfort and energy efficiency.
+Upon startup, the ESP module connects to the Wi-Fi network and establishes an MQTT connection with Home Assistant. The module send a mesaje at startup to HAS in order to send parameters and adjust temperature setpoints for each heating zone, heating running time, heating pause time, status of TRV valves, hysteresis value. 
 
-Project Setup Overview:
+The module receive data from Home Assistant like temperatures, target temperatures of each zone and start or stop heating. The module open and close TRV valves and waiting confirmation.
 
-To implement the system, you need to configure the ESP module to connect to your Wi-Fi and MQTT broker, set up the Zigbee communication for the TRV valves, and integrate the device within Home Assistant. Once connected, Home Assistant will manage the heating zones based on real-time data and user-defined settings.
+The module actuate boiler and heat till target temperature is reached a zone or all zones just if TRV are online and opened, if Over running time not reached and  connection between MQTT broker and wifi is up .
 
-Contributing:
+## Project Setup Overview:
+
+To implement the system, you need to to install HAS, add automations, configure the ESP module to connect to your Wi-Fi. 
+Automations and other config will be published here later...
+
+Once connected, Will know to find Home Assistant with mDNS configuration that is defined as homeassistant.local. After this , will start comunication and receive data , also send data to HAS
+
+## Contributing:
 
 Contributions to improve the project are welcome. If you find any issues or have suggestions for enhancements, feel free to share your ideas or submit pull requests. Collaborative efforts will help refine the system and expand its capabilities.
 
-License:
+## License:
 
 This project is released under an open-source license, allowing for modifications and redistribution. For detailed licensing information, please refer to the LICENSE file in the repository.
 
 This comprehensive solution aims to provide a reliable and flexible approach to managing home heating, combining modern communication protocols with effective hardware integration for an enhanced user experience.   
+
+
+## Presentation
+Main page ESP 
+
+![Alt text](source/mainpage.JPG)
+
