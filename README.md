@@ -64,3 +64,14 @@ Main page ESP
 
 ![Alt text](source/mainpage.JPG)
 
+Menu bar
+
+![Alt text](source/mainpage.JPG)
+
+System info page 
+
+![Alt text](source/sysinfo.JPG)
+
+Software upgrade page 
+
+![Alt text](source/upgrade_page.JPG)
