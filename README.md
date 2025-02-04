@@ -78,8 +78,7 @@ Software upgrade page
 
 ## Home Assitant 
 HAS main page
-
-![Alt text](source/hasmain.JPG)
+![Alt text](source/hassmain.JPG)
 
 HAS settings
 ![Alt text](source/HASsettings.JPG)
