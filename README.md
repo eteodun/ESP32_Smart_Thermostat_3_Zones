@@ -1,10 +1,10 @@
 #  Module ESP designed to be used for Smart Home heating system with 3 zones integrated with Home Assistant via MQTT protocol.
 
-#ESP Module for Home Assistant-Integrated Heating System
+# ESP Module for Home Assistant-Integrated Heating System
 
 This project is an open-source solution that integrates an ESP module with Home Assistant to control a heating system. The system consists of a boiler for centralized heating and three individual heating zones. Each zone is managed by a TRV (Thermostatic Radiator Valve) that operates via Zigbee technology, ensuring precise temperature control in each area. Communication between the ESP module and Home Assistant is facilitated through MQTT, providing real-time data exchange and control.
 
-#Key Features:
+# Key Features:
 
 Seamless Home Assistant Integration: Easily control and monitor the heating system through Home Assistant.
 Zonal Control: Manage three independent heating zones with TRV valves over Zigbee for efficient and customized heating.
@@ -12,7 +12,7 @@ Real-Time MQTT Communication: The ESP module communicates with Home Assistant vi
 Customizability: Adjust heating schedules, temperature setpoints, and other parameters to meet specific needs.
 Protection to over running boiler: The system has implemented conditions to prevent boiler over running  in case that one or more sensor fail to measure, in case that  wifi or Home Asssitant is disconnected or malfunction on heating instalation that can increase time to reac or not reach raget temperature.  
 
-#Technologies Involved:
+# Technologies Involved:
 
 ESP Microcontroller (ESP8266/ESP32): The core component that runs the control logic and manages communications.
 Home Assistant: The home automation platform that integrates all components of the heating system.
