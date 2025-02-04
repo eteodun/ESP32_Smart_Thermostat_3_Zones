@@ -1,0 +1,2 @@
+# ESP32_Smart_Thermostat_3_Zoness
+ESP32_Smart_Thermostat_3_Zoness with Home assitant
