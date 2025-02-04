@@ -6,11 +6,11 @@ This project is an open-source solution that integrates an ESP module with Home 
 
 # Key Features:
 
-#Seamless Home Assistant Integration: Easily control and monitor the heating system through Home Assistant.
-#Zonal Control: Manage three independent heating zones with TRV valves over Zigbee for efficient and customized heating.
-#Real-Time MQTT Communication: The ESP module communicates with Home Assistant via MQTT, ensuring swift updates and commands.
-#Customizability: Adjust heating schedules, temperature setpoints, and other parameters to meet specific needs.
-#Protection to over running boiler: The system has implemented conditions to prevent boiler over running  in case that one or more sensor fail to measure, in case that  wifi or Home Asssitant is disconnected or malfunction on heating instalation that can increase time to reach or not reach target temperature.
+Seamless Home Assistant Integration: Easily control and monitor the heating system through Home Assistant.
+Zonal Control: Manage three independent heating zones with TRV valves over Zigbee for efficient and customized heating.
+Real-Time MQTT Communication: The ESP module communicates with Home Assistant via MQTT, ensuring swift updates and commands.
+Customizability: Adjust heating schedules, temperature setpoints, and other parameters to meet specific needs.
+Protection to over running boiler: The system has implemented conditions to prevent boiler over running  in case that one or more sensor fail to measure, in case that  wifi or Home Asssitant is disconnected or malfunction on heating instalation that can increase time to reach or not reach target temperature.
 
 # Technologies Involved:
 
