@@ -66,7 +66,7 @@ Main page ESP
 
 Menu bar
 
-![Alt text](source/mainpage.JPG)
+![Alt text](source/menupage.JPG)
 
 System info page 
 
@@ -75,3 +75,6 @@ System info page
 Software upgrade page 
 
 ![Alt text](source/upgrade_page.JPG)
+
+Home Assitant 
+
